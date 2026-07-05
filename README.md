@@ -1,5 +1,9 @@
 # 🏥 MedicalMS (Pharmacy Management System)
 
+![MedicalMS Preview](https://res.prathameshgiri.in/projects/pharmaflow.png)
+
+**[Live Demo](https://pharmaflow.prathameshgiri.in/)** | **[Source Code](https://github.com/prathameshgiri/Medicalms)**
+
 A complete, modern, and professional **Pharmacy Management System** built with a premium glassmorphic UI. This application is designed to streamline pharmacy operations, including inventory tracking, POS billing, prescription approvals, and supplier management.
 
 **This is an Open-Source Project.**
