@@ -1,0 +1,23 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+.header { display: flex; align-items: center; justify-content: space-between; }
+.title { font-size: 1.4rem; font-weight: 800; color: var(--gray-900); margin-bottom: 2px; }
+.sub { font-size: 0.85rem; color: var(--gray-500); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.card { background: var(--glass-bg-strong); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: var(--radius-xl); padding: 20px; box-shadow: var(--glass-shadow); display: flex; flex-direction: column; gap: 12px; }
+.cardTop { display: flex; align-items: center; gap: 12px; }
+.avatar { width: 48px; height: 48px; background: linear-gradient(135deg, #8E24AA, #AB47BC); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 0.95rem; flex-shrink: 0; box-shadow: 0 4px 12px rgba(142,36,170,0.25); }
+.info { flex: 1; }
+.name { font-size: 0.95rem; font-weight: 800; color: var(--gray-800); margin-bottom: 4px; }
+.actions { display: flex; gap: 5px; }
+.btn { width: 28px; height: 28px; border: 1.5px solid var(--gray-200); background: var(--white); border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--gray-500); transition: all 0.15s; }
+.btn:hover { border-color: var(--primary); color: var(--primary); }
+.del:hover { border-color: var(--danger) !important; color: var(--danger) !important; }
+.role { font-size: 0.85rem; font-weight: 600; color: var(--primary); background: var(--primary-soft); padding: 4px 10px; border-radius: var(--radius-full); width: fit-content; }
+.details { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.detail { display: flex; flex-direction: column; gap: 2px; }
+.detail span { font-size: 0.7rem; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.04em; }
+.detail strong { font-size: 0.875rem; color: var(--gray-800); }
+.salary { color: var(--success) !important; }
+.attendance { display: flex; align-items: center; gap: 6px; }
+.attendBar { flex: 1; height: 6px; background: var(--gray-200); border-radius: 99px; overflow: hidden; }
+.attendFill { height: 100%; background: var(--gradient-success); border-radius: 99px; }

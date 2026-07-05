@@ -1,0 +1,105 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+
+.header { display: flex; align-items: center; justify-content: space-between; }
+
+.back {
+  display: flex; align-items: center; gap: 8px;
+  background: none; border: none; cursor: pointer;
+  font-size: 0.875rem; color: var(--gray-600); font-family: var(--font-primary);
+  font-weight: 600; padding: 8px 0; transition: color 0.2s;
+}
+.back:hover { color: var(--primary); }
+
+.headerActions { display: flex; gap: 10px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.leftCol, .rightCol { display: flex; flex-direction: column; gap: 16px; }
+
+.card {
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: 20px 24px;
+  box-shadow: var(--glass-shadow);
+}
+
+.cardTitle { font-size: 0.95rem; font-weight: 700; color: var(--gray-800); margin-bottom: 14px; }
+
+/* Medicine Hero Card */
+.medicineCard {
+  background: linear-gradient(135deg, var(--primary) 0%, #21CBF3 100%);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(33,150,243,0.25);
+}
+
+.medicineAvatar {
+  width: 72px; height: 72px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; font-weight: 800; color: white;
+  margin: 0 auto 12px;
+  backdrop-filter: blur(8px);
+}
+
+.medicineName { font-size: 1.1rem; font-weight: 800; color: white; margin-bottom: 4px; }
+.medicineBrand { font-size: 0.8rem; color: rgba(255,255,255,0.8); margin-bottom: 14px; }
+
+.statusRow { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
+
+/* QR */
+.qrWrapper { display: flex; justify-content: center; padding: 8px 0; }
+.barcodeText { text-align: center; font-size: 0.75rem; font-family: monospace; color: var(--gray-400); margin-top: 8px; }
+
+/* Pricing */
+.priceGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.priceItem { background: var(--gray-50); border-radius: var(--radius-lg); padding: 12px; }
+.priceLabel { font-size: 0.72rem; color: var(--gray-500); font-weight: 600; text-transform: uppercase; margin-bottom: 4px; }
+.priceVal { font-size: 1rem; font-weight: 800; color: var(--gray-800); }
+.primaryPrice { color: var(--primary); }
+
+/* Details */
+.description { font-size: 0.875rem; color: var(--gray-600); line-height: 1.7; }
+.detailsList { display: flex; flex-direction: column; gap: 0; }
+.detailRow {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 0; border-bottom: 1px solid var(--gray-100);
+}
+.detailRow:last-child { border-bottom: none; }
+.detailLeft { display: flex; align-items: center; gap: 8px; color: var(--gray-400); }
+.detailLabel { font-size: 0.85rem; color: var(--gray-600); }
+.detailValue { font-size: 0.85rem; font-weight: 600; color: var(--gray-800); }
+
+/* Stock Widget */
+.stockWidget { display: flex; align-items: center; gap: 20px; }
+.stockCircle {
+  width: 80px; height: 80px;
+  background: var(--primary-soft);
+  border-radius: 50%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  flex-shrink: 0;
+  border: 3px solid var(--primary-light);
+}
+.stockNum { font-size: 1.2rem; font-weight: 800; color: var(--primary); }
+.stockUnit { font-size: 0.65rem; color: var(--primary); font-weight: 600; }
+.stockDetails { flex: 1; }
+.stockRow { display: flex; justify-content: space-between; margin-bottom: 6px; }
+.stockLabel { font-size: 0.8rem; color: var(--gray-500); }
+.stockBold { font-size: 0.8rem; font-weight: 700; color: var(--gray-800); }
+.stockProgress { margin-top: 8px; }
+.stockBar { height: 8px; background: var(--gray-200); border-radius: 99px; overflow: hidden; }
+.stockFill { height: 100%; border-radius: 99px; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}

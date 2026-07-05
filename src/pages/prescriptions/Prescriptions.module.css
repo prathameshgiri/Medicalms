@@ -1,0 +1,21 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+.header { display: flex; align-items: center; justify-content: space-between; }
+.title { font-size: 1.4rem; font-weight: 800; color: var(--gray-900); margin-bottom: 2px; }
+.sub { font-size: 0.85rem; color: var(--gray-500); }
+.statsRow { display: flex; gap: 16px; flex-wrap: wrap; }
+.statCard { flex: 1; min-width: 120px; background: var(--glass-bg-strong); backdrop-filter: blur(16px); border: 1px solid; border-radius: var(--radius-xl); padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 4px; box-shadow: var(--glass-shadow); }
+.statVal { font-size: 1.8rem; font-weight: 900; }
+.statLabel { font-size: 0.78rem; color: var(--gray-500); font-weight: 600; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.card { background: var(--glass-bg-strong); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: var(--radius-xl); padding: 20px; box-shadow: var(--glass-shadow); display: flex; flex-direction: column; gap: 12px; }
+.cardTop { display: flex; align-items: center; gap: 10px; }
+.rxIcon { width: 40px; height: 40px; background: var(--primary-soft); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--primary); flex-shrink: 0; }
+.rxInfo { flex: 1; }
+.rxNo { font-family: monospace; font-size: 0.85rem; font-weight: 700; color: var(--gray-700); }
+.rxPatient { font-size: 0.95rem; font-weight: 800; color: var(--gray-900); }
+.doctorRow p { font-size: 0.875rem; color: var(--gray-800); }
+.hospital { font-size: 0.75rem; color: var(--gray-400); }
+.meds { display: flex; flex-wrap: wrap; gap: 6px; }
+.medTag { font-size: 0.72rem; background: var(--primary-soft); color: var(--primary); padding: 2px 8px; border-radius: var(--radius-full); font-weight: 600; }
+.dateRow { font-size: 0.78rem; color: var(--gray-400); }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }

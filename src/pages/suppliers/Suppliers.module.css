@@ -1,0 +1,25 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+.header { display: flex; align-items: center; justify-content: space-between; }
+.title { font-size: 1.4rem; font-weight: 800; color: var(--gray-900); margin-bottom: 2px; }
+.sub { font-size: 0.85rem; color: var(--gray-500); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.card { background: var(--glass-bg-strong); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: var(--radius-xl); padding: 20px; box-shadow: var(--glass-shadow); display: flex; flex-direction: column; gap: 8px; }
+.cardTop { display: flex; align-items: center; gap: 12px; margin-bottom: 4px; }
+.avatar { width: 44px; height: 44px; background: var(--gradient-teal); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.1rem; flex-shrink: 0; }
+.info { flex: 1; }
+.name { font-size: 0.95rem; font-weight: 800; color: var(--gray-800); }
+.contact { font-size: 0.75rem; color: var(--gray-400); }
+.rating { display: flex; align-items: center; gap: 4px; font-size: 0.8rem; font-weight: 700; color: var(--warning); background: var(--warning-soft); padding: 4px 8px; border-radius: var(--radius-full); }
+.row { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--gray-500); }
+.gst { font-size: 0.75rem; color: var(--gray-400); background: var(--gray-50); border-radius: 6px; padding: 4px 8px; }
+.gst span { font-family: monospace; color: var(--gray-700); }
+.cardFooter { display: flex; align-items: center; gap: 10px; padding-top: 10px; border-top: 1px solid var(--gray-100); }
+.stat { flex: 1; display: flex; flex-direction: column; }
+.stat strong { font-size: 0.9rem; font-weight: 800; color: var(--gray-800); }
+.stat span { font-size: 0.68rem; color: var(--gray-400); }
+.actions { display: flex; gap: 5px; }
+.btn { width: 28px; height: 28px; border: 1.5px solid var(--gray-200); background: var(--white); border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--gray-500); transition: all 0.15s; }
+.btn:hover { border-color: var(--primary); color: var(--primary); }
+.del:hover { border-color: var(--danger) !important; color: var(--danger) !important; }
+.modalTop { display: flex; align-items: center; gap: 16px; }
+.modalAvatar { width: 52px; height: 52px; background: var(--gradient-teal); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.2rem; }

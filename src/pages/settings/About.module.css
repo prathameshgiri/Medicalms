@@ -1,0 +1,17 @@
+.page { display: flex; flex-direction: column; gap: 24px; }
+.hero { text-align: center; padding: 32px; background: linear-gradient(135deg, var(--primary-soft) 0%, var(--purple-soft) 100%); border-radius: var(--radius-2xl); border: 1px solid var(--glass-border); }
+.heroIcon { width: 72px; height: 72px; background: var(--gradient-primary); border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; margin: 0 auto 16px; box-shadow: 0 8px 24px rgba(33,150,243,0.3); }
+.heroTitle { font-size: 2rem; font-weight: 900; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 10px; }
+.heroDesc { font-size: 1rem; color: var(--gray-600); max-width: 500px; margin: 0 auto; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card { background: var(--glass-bg-strong); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: var(--radius-xl); padding: 20px; box-shadow: var(--glass-shadow); display: flex; flex-direction: column; gap: 12px; }
+.cardIcon { width: 48px; height: 48px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.cardTitle { font-size: 1rem; font-weight: 800; color: var(--gray-800); }
+.cardDesc { font-size: 0.85rem; color: var(--gray-500); line-height: 1.7; }
+.infoCard { background: var(--glass-bg-strong); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: var(--radius-xl); padding: 24px; box-shadow: var(--glass-shadow); }
+.infoTitle { font-size: 1rem; font-weight: 800; color: var(--gray-800); margin-bottom: 16px; }
+.infoGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.infoRow { display: flex; align-items: center; gap: 8px; padding: 10px; background: var(--gray-50); border-radius: var(--radius-lg); }
+.infoKey { font-size: 0.8rem; color: var(--gray-500); flex: 1; }
+.infoVal { font-size: 0.85rem; font-weight: 800; color: var(--gray-800); }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .infoGrid { grid-template-columns: 1fr 1fr; } }

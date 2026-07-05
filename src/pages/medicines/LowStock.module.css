@@ -1,0 +1,19 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+.title { font-size: 1.4rem; font-weight: 800; color: var(--gray-900); margin-bottom: 2px; }
+.sub { font-size: 0.85rem; color: var(--gray-500); }
+.tableCard { background: var(--glass-bg-strong); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--glass-shadow); }
+.table { width: 100%; border-collapse: collapse; }
+.table th { padding: 14px 16px; text-align: left; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray-500); background: var(--gray-50); border-bottom: 1px solid var(--gray-100); }
+.row { border-bottom: 1px solid var(--gray-100); }
+.row:last-child { border-bottom: none; }
+.row:hover td { background: rgba(33,150,243,0.02); }
+.row td { padding: 14px 16px; vertical-align: middle; }
+.medInfo { display: flex; align-items: center; gap: 10px; }
+.avatar { width: 36px; height: 36px; background: var(--gradient-warning); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; flex-shrink: 0; }
+.medName { font-size: 0.875rem; font-weight: 700; color: var(--gray-800); }
+.medBrand { font-size: 0.75rem; color: var(--gray-400); }
+.stockDisplay { display: flex; flex-direction: column; gap: 4px; }
+.stockNum { font-size: 1.1rem; font-weight: 900; }
+.stockBar { width: 80px; height: 6px; background: var(--gray-200); border-radius: 99px; overflow: hidden; }
+.fill { height: 100%; border-radius: 99px; }
+.minQty { font-size: 0.875rem; font-weight: 700; color: var(--gray-600); }

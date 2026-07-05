@@ -1,0 +1,207 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.title { font-size: 1.4rem; font-weight: 800; color: var(--gray-900); margin-bottom: 2px; }
+.sub { font-size: 0.85rem; color: var(--gray-500); }
+
+.headerActions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* Filters */
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.searchWrap {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray-400);
+}
+
+.searchInput {
+  width: 100%;
+  height: 40px;
+  padding: 0 14px 0 38px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  font-size: 0.875rem;
+  font-family: var(--font-primary);
+  color: var(--gray-700);
+  background: var(--white);
+  outline: none;
+  transition: all 0.2s;
+}
+
+.searchInput:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(33,150,243,0.08);
+}
+
+.select {
+  height: 40px;
+  padding: 0 12px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  font-size: 0.85rem;
+  font-family: var(--font-primary);
+  color: var(--gray-700);
+  background: var(--white);
+  outline: none;
+  cursor: pointer;
+  min-width: 140px;
+}
+
+.resetBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 40px;
+  padding: 0 14px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  background: var(--gray-50);
+  color: var(--gray-600);
+  font-size: 0.85rem;
+  font-family: var(--font-primary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.resetBtn:hover { border-color: var(--danger); color: var(--danger); }
+
+/* Table */
+.tableCard {
+  background: var(--glass-bg-strong);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--glass-shadow);
+}
+
+.tableWrap { overflow-x: auto; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray-500);
+  background: var(--gray-50);
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: color 0.15s;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.th:hover { color: var(--primary); }
+
+.sortIcon { display: inline-flex; align-items: center; margin-left: 4px; vertical-align: middle; }
+
+.tr {
+  border-bottom: 1px solid var(--gray-100);
+  transition: background 0.15s;
+}
+
+.tr:hover { background: rgba(33,150,243,0.03); }
+.tr:last-child { border-bottom: none; }
+
+.td { padding: 14px 16px; vertical-align: middle; }
+
+.medInfo { display: flex; align-items: center; gap: 12px; }
+
+.medAvatar {
+  width: 36px;
+  height: 36px;
+  background: var(--gradient-primary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.medName { font-size: 0.875rem; font-weight: 700; color: var(--gray-800); }
+.medBrand { font-size: 0.75rem; color: var(--gray-400); }
+
+.mono { font-family: 'Courier New', monospace; font-size: 0.8rem; color: var(--gray-600); }
+
+.stockInfo { display: flex; flex-direction: column; gap: 4px; }
+
+.stockNum { font-size: 0.875rem; font-weight: 700; color: var(--gray-800); }
+
+.stockBar {
+  width: 60px;
+  height: 4px;
+  background: var(--gray-200);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.stockFill { height: 100%; border-radius: 99px; transition: width 0.4s; }
+
+.price { font-size: 0.875rem; font-weight: 700; color: var(--gray-800); }
+
+.actions { display: flex; align-items: center; gap: 6px; }
+
+.actionBtn {
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid var(--gray-200);
+  background: var(--white);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-500);
+  transition: all 0.15s;
+}
+
+.actionBtn:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-soft); }
+.deleteBtn:hover { border-color: var(--danger) !important; color: var(--danger) !important; background: var(--danger-soft) !important; }
+
+.emptyCell { padding: 40px; }
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: var(--gray-400);
+  font-size: 0.9rem;
+}
+
+.tableFooter {
+  padding: 12px 16px;
+  border-top: 1px solid var(--gray-100);
+}

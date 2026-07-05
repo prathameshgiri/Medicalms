@@ -1,0 +1,133 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+.header { display: flex; align-items: center; justify-content: space-between; }
+.title { font-size: 1.4rem; font-weight: 800; color: var(--gray-900); margin-bottom: 2px; }
+.sub { font-size: 0.85rem; color: var(--gray-500); }
+.headerActions { display: flex; gap: 10px; }
+
+.posLayout { display: grid; grid-template-columns: 1fr 360px; gap: 20px; align-items: start; }
+
+.leftPanel, .rightPanel { display: flex; flex-direction: column; gap: 16px; }
+
+.card {
+  background: var(--glass-bg-strong); backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border); border-radius: var(--radius-xl);
+  padding: 20px; box-shadow: var(--glass-shadow);
+}
+
+.cardTitle { font-size: 0.95rem; font-weight: 700; color: var(--gray-800); margin-bottom: 14px; }
+
+/* Search */
+.searchWrap { position: relative; }
+.searchIcon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--gray-400); }
+.barcodeIcon { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--gray-400); cursor: pointer; }
+.searchInput {
+  width: 100%; height: 44px; padding: 0 40px;
+  border: 1.5px solid var(--gray-200); border-radius: var(--radius-lg);
+  font-size: 0.875rem; font-family: var(--font-primary); outline: none; background: var(--white); color: var(--gray-700);
+}
+.searchInput:focus { border-color: var(--primary-light); box-shadow: 0 0 0 3px rgba(33,150,243,0.08); }
+
+.searchDropdown {
+  position: absolute; left: 0; right: 0; top: calc(100% + 6px);
+  background: var(--glass-bg-strong); backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border); border-radius: var(--radius-xl);
+  overflow: hidden; box-shadow: var(--shadow-xl); z-index: 10;
+}
+
+.searchItem {
+  display: flex; align-items: center; gap: 10px; padding: 12px 14px;
+  cursor: pointer; transition: background 0.15s; border-bottom: 1px solid var(--gray-100);
+}
+.searchItem:last-child { border-bottom: none; }
+.searchItem:hover { background: var(--primary-soft); }
+
+.searchAvatar {
+  width: 34px; height: 34px; background: var(--gradient-primary);
+  border-radius: 10px; display: flex; align-items: center; justify-content: center;
+  color: white; font-weight: 800; font-size: 0.85rem; flex-shrink: 0;
+}
+
+.searchInfo { flex: 1; }
+.searchName { font-size: 0.85rem; font-weight: 700; color: var(--gray-800); }
+.searchMeta { font-size: 0.72rem; color: var(--gray-400); }
+.searchPrice { font-size: 0.85rem; font-weight: 700; color: var(--primary); white-space: nowrap; }
+.addIcon { color: var(--primary); }
+
+/* Cart */
+.emptyCart {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  padding: 24px; color: var(--gray-400); font-size: 0.875rem;
+}
+
+.cartItems { display: flex; flex-direction: column; gap: 10px; }
+
+.cartItem {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px; background: var(--gray-50); border-radius: var(--radius-lg);
+}
+
+.cartAvatar {
+  width: 36px; height: 36px; background: var(--gradient-primary);
+  border-radius: 10px; display: flex; align-items: center; justify-content: center;
+  color: white; font-weight: 800; flex-shrink: 0;
+}
+
+.cartInfo { flex: 1; min-width: 0; }
+.cartName { font-size: 0.85rem; font-weight: 700; color: var(--gray-800); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cartMeta { font-size: 0.72rem; color: var(--gray-400); }
+
+.qtyControls { display: flex; align-items: center; gap: 6px; }
+.qtyBtn {
+  width: 26px; height: 26px; border: 1.5px solid var(--gray-200); background: var(--white);
+  border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: 700; color: var(--gray-700);
+  display: flex; align-items: center; justify-content: center;
+}
+.qtyBtn:hover { border-color: var(--primary); color: var(--primary); }
+.qtyVal { font-size: 0.875rem; font-weight: 800; color: var(--gray-800); min-width: 24px; text-align: center; }
+
+.cartTotal { font-size: 0.875rem; font-weight: 800; color: var(--gray-800); white-space: nowrap; }
+
+.removeBtn {
+  width: 28px; height: 28px; border: 1.5px solid var(--danger-soft); background: var(--danger-soft);
+  color: var(--danger); border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+.removeBtn:hover { background: var(--danger); color: white; }
+
+/* Customer */
+.customerForm { display: flex; flex-direction: column; gap: 10px; }
+.inputWrap { position: relative; }
+.inputIcon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--gray-400); }
+.custInput {
+  width: 100%; height: 42px; padding: 0 14px 0 38px;
+  border: 1.5px solid var(--gray-200); border-radius: var(--radius-lg);
+  font-size: 0.875rem; font-family: var(--font-primary); outline: none; background: var(--white); color: var(--gray-700);
+}
+.custInput:focus { border-color: var(--primary-light); }
+
+/* Payment */
+.paymentMethods { display: flex; gap: 10px; }
+.payBtn {
+  flex: 1; height: 50px; border: 2px solid var(--gray-200); background: var(--white);
+  border-radius: var(--radius-lg); cursor: pointer; font-size: 0.82rem; font-weight: 700;
+  color: var(--gray-600); display: flex; align-items: center; justify-content: center; gap: 6px;
+  font-family: var(--font-primary); transition: all 0.2s;
+}
+.payBtn:hover { border-color: var(--primary); color: var(--primary); }
+.payBtnActive { border-color: var(--primary) !important; background: var(--primary-soft) !important; color: var(--primary) !important; }
+
+/* Summary */
+.summaryRows { display: flex; flex-direction: column; gap: 10px; }
+.summaryRow {
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 0.875rem; color: var(--gray-600); font-weight: 500;
+}
+.discountRow { padding: 10px; background: var(--warning-soft); border-radius: var(--radius-lg); }
+.discLabel { display: flex; align-items: center; gap: 5px; color: var(--warning); font-weight: 700; }
+.discInput { display: flex; align-items: center; gap: 4px; font-weight: 700; }
+.discNum { width: 50px; height: 30px; border: 1.5px solid var(--warning); border-radius: 8px; text-align: center; font-size: 0.875rem; font-weight: 800; background: white; outline: none; color: var(--gray-800); }
+.totalRow { padding-top: 10px; border-top: 2px solid var(--gray-200); font-weight: 800; font-size: 1rem; }
+.grandTotal { font-size: 1.3rem; font-weight: 900; color: var(--primary); }
+
+@media (max-width: 900px) {
+  .posLayout { grid-template-columns: 1fr; }
+}
