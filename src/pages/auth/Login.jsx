@@ -98,10 +98,6 @@ const Login = () => {
             <p className={styles.cardSub}>Sign in to your PharmaFlow account</p>
           </div>
 
-          {/* Demo credentials hint */}
-          <div className={styles.demoHint}>
-            <p>Demo: <strong>admin@pharmaflow.com</strong> / <strong>admin123</strong></p>
-          </div>
 
           <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
             <Input
